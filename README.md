@@ -1,2 +1,3 @@
 # toodlcmd
-a command line interface to toodledo
+A ommand line interface to toodledo.  
+It is currently in development.
