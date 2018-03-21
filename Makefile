@@ -1,7 +1,8 @@
 CC = gcc
-CFLAGS = -Wall -lcurl
+CFLAGS = -Wall -lcurl -I../jsmn
 
-OBJ = main.o toodlcmd.o
+OBJ = main.o toodlcmd.o libjsmn.a
+OBJ_WITHOUT_LIB = main.o toodlcmd.o
 
 toodl: $(OBJ)
 	$(CC) $(CFLAGS) -o toodl $(OBJ)
@@ -10,7 +11,7 @@ toodl: $(OBJ)
 	$(CC) $(CFLAGS) -c $<
 
 clean:
-	rm -rf toodl $(OBJ)
+	rm -rf toodl $(OBJ_WITHOUT_LIB)
 
 install: toodl
 	cp toodl /usr/bin
