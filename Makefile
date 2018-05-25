@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -lcurl -I../jsmn
 
-OBJ = main.o toodlcmd.o libjsmn.a
-OBJ_WITHOUT_LIB = main.o toodlcmd.o
+OBJ = main.o rtmcmd.o libjsmn.a
+OBJ_WITHOUT_LIB = main.o rtmcmd.o
 
 toodl: $(OBJ)
 	$(CC) $(CFLAGS) -o toodl $(OBJ)
