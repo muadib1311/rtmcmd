@@ -1,3 +1,3 @@
 # rtmcmd
-A ommand line interface to remember teh.  
+A ommand line interface to remember the milk.  
 It is currently in development.
